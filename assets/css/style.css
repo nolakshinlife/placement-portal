@@ -1,0 +1,24 @@
+:root { --primary: #0056b3; --secondary: #f4f7f6; --text: #333; --success: #28a745; --danger: #dc3545; --warning: #ffc107; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+body { background-color: var(--secondary); color: var(--text); }
+.navbar { background-color: var(--primary); padding: 15px 20px; color: white; display: flex; justify-content: space-between; align-items: center; }
+.navbar a { color: white; text-decoration: none; margin-left: 15px; }
+.container { max-width: 1000px; margin: 30px auto; padding: 20px; }
+.auth-box { max-width: 400px; margin: 80px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+.form-control { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+.btn { display: inline-block; padding: 10px 15px; background: var(--primary); color: white; border: none; border-radius: 4px; cursor: pointer; text-decoration: none; text-align: center; }
+.btn:hover { background: #004494; }
+.btn:disabled { background: #ccc; cursor: not-allowed; }
+.dashboard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 20px; }
+.card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }
+th, td { padding: 12px; border: 1px solid #ddd; text-align: left; }
+th { background-color: var(--primary); color: white; }
+.badge { padding: 5px 10px; border-radius: 12px; font-size: 12px; color: white; }
+.badge.Applied { background: gray; }
+.badge.Shortlisted { background: var(--primary); }
+.badge.Selected { background: var(--success); }
+.badge.Rejected { background: var(--danger); }
+.alert { padding: 10px; background: #d4edda; color: #155724; border-radius: 4px; margin-bottom: 15px; }
